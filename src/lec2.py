@@ -8,7 +8,7 @@ SP500 = yf.download("^GSPC", start = "2012-01-01", end = "2022-09-06")
 SP500 = SP500.Close.to_frame()
 
 #SP500.plot()
-#plt.savefig('plot2.png')
+#plt.show()
 
 # ~~~~~ simple moving avg ~~~~~
 # mean of rolling window
@@ -57,4 +57,4 @@ for i in range(0,2685):
 print(SP500)
 
 SP500.position.plot()
-plt.savefig('plot2.png')
+plt.show()

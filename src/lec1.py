@@ -39,7 +39,7 @@ close = stocks.loc[:,'Close'] #ignores all subcategories of information and only
 #close.plot()
 
 #plt.legend()
-#plt.savefig('plot1.png')
+#plt.show()
 
 #print(close)
 
@@ -53,7 +53,7 @@ close = stocks.loc[:,'Close'] #ignores all subcategories of information and only
 #norm = close.div(close.iloc[0,:]) #can use [0,:] or [0]
 #norm.plot()
 #plt.legend()
-#plt.savefig('plot1.png')
+#plt.show()
 
 # ---- the shift method -----
 aapl = close.AAPL.copy().to_frame() #copy coppies, to_frame turns the series object into a dataframe type
@@ -67,7 +67,7 @@ ret = aapl.loc[:,'pct_change'].dropna() #return is percentage change day by day
 #print(ret)
 ret.plot(kind = "hist",bins=100)
 plt.legend()
-plt.savefig('plot1.png')
+plt.show()
 daily_mean_return = ret.mean() #mean percentage change of stock price in a day
 daily_var_return = ret.var() #variance of percentage change of stock price
 daily_std_return = ret.std() #standard deviation of percentage change of stock price
