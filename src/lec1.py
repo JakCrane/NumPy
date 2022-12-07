@@ -36,6 +36,7 @@ stocks.index = pd.to_datetime(stocks.index) #changes (dict-like container) dataf
 close = stocks.loc[:,'Close'] #ignores all subcategories of information and only takes closing price. loc takes values from a dataset using the index arugment passed in
 #closing price is the most accurate & standard in determining value over time
 #the closing price doesnt reflect the impact of cash dividends, stock dividends or stock splits
+#most volume traded in the closing auction so best guess at price
 #close.plot()
 
 #plt.legend()

@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 SP500 = yf.download("^GSPC", start = "2012-01-01", end = "2022-09-06")
 SP500 = SP500.Close.to_frame()
 
-#SP500.plot()
-#plt.show()
+SP500.plot()
+plt.show()
 
 # ~~~~~ simple moving avg ~~~~~
 # mean of rolling window
